@@ -17,7 +17,7 @@ import HOCReadme from './stories/HOCReadme.js'
 const stories = [
   { name: 'Readme', component: Readme },
   { name: 'HOC Readme', component: HOCReadme },
-  
+
   // { name: 'Tester', component: Test },
   { name: 'Simple Table', component: CodeSandbox('X6npLXPRW') },
   {
