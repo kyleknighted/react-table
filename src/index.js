@@ -280,13 +280,11 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
       return (
         <TheadComponent
           className={classnames('-headerGroups -omgnewthing', theadGroupProps.className)}
-          // style={{
-          //   ...theadGroupProps.style,
-          //   // minWidth: `${rowMinWidth}px`,
-          //   minWidth: `100%`,
-          //   maxWidth: `100%`,
-          // }}
-          // {...theadGroupProps.rest}
+          style={{
+            ...theadGroupProps.style,
+            minWidth: `${rowMinWidth}px`,
+          }}
+          {...theadGroupProps.rest}
         >
           <TrComponent
             className={theadGroupTrProps.className}
@@ -394,12 +392,11 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
       return (
         <TheadComponent
           className={classnames('-header', theadProps.className)}
-          // style={{
-          //   ...theadProps.style,
-          //   // minWidth: `${rowMinWidth}px`,
-          //   minWidth: '100%',
-          // }}
-          // {...theadProps.rest}
+          style={{
+            ...theadProps.style,
+            minWidth: `${rowMinWidth}px`,
+          }}
+          {...theadProps.rest}
         >
           <TrComponent
             className={theadTrProps.className}
@@ -495,12 +492,11 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
       return (
         <TheadComponent
           className={classnames('-filters', theadFilterProps.className)}
-          // style={{
-          //   ...theadFilterProps.style,
-          //   // minWidth: `${rowMinWidth}px`,
-          //   minWidth: `100%`,
-          // }}
-          // {...theadFilterProps.rest}
+          style={{
+            ...theadFilterProps.style,
+            minWidth: `${rowMinWidth}px`,
+          }}
+          {...theadFilterProps.rest}
         >
           <TrComponent
             className={theadFilterTrProps.className}
@@ -917,8 +913,7 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
           className={tFootProps.className}
           style={{
             ...tFootProps.style,
-            // minWidth: `${rowMinWidth}px`,
-            minWidth: `100%`,
+            minWidth: `${rowMinWidth}px`,
           }}
           {...tFootProps.rest}
         >
@@ -983,8 +978,7 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
               className={classnames(tBodyProps.className)}
               style={{
                 ...tBodyProps.style,
-                // minWidth: `${rowMinWidth}px`,
-                minWidth: `100%`,
+                minWidth: `${rowMinWidth}px`,
               }}
               {...tBodyProps.rest}
             >
