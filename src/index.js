@@ -249,7 +249,7 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
       const flexStyles = {
         flex: `1 1 ${_.asPx(flex)}`,
         width: _.asPx(width),
-        maxWidth: '100%',
+        minWidth: _.asPx(width),
       }
 
       return (
