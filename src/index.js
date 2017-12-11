@@ -247,8 +247,9 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
       }
 
       const flexStyles = {
-        flex: `${flex} 0 auto`,
+        flex: `1 1 ${_.asPx(flex)}`,
         width: _.asPx(width),
+        minWidth: _.asPx(width),
         maxWidth: _.asPx(maxWidth),
       }
 
@@ -362,8 +363,9 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
           )}
           style={{
             ...styles,
-            flex: `${width} 0 auto`,
+            flex: `1 1 ${_.asPx(width)}`,
             width: _.asPx(width),
+            minWidth: _.asPx(width),
             maxWidth: _.asPx(maxWidth),
           }}
           toggleSort={e => {
@@ -461,8 +463,9 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
           className={classnames(classes)}
           style={{
             ...styles,
-            flex: `${width} 0 auto`,
+            flex: `1 1 ${_.asPx(width)}`,
             width: _.asPx(width),
+            minWidth: _.asPx(width),
             maxWidth: _.asPx(maxWidth),
           }}
           {...rest}
@@ -740,8 +743,9 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
                   )}
                   style={{
                     ...styles,
-                    flex: `${width} 0 auto`,
+                    flex: `1 1 ${_.asPx(width)}`,
                     width: _.asPx(width),
+                    minWidth: _.asPx(width),
                     maxWidth: _.asPx(maxWidth),
                   }}
                   {...tdProps.rest}
@@ -806,8 +810,9 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
           className={classnames(classes, !show && 'hidden')}
           style={{
             ...styles,
-            flex: `${flex} 0 auto`,
+            flex: `1 1 ${_.asPx(flex)}`,
             width: _.asPx(width),
+            minWidth: _.asPx(width),
             maxWidth: _.asPx(maxWidth),
           }}
           {...tdProps.rest}
@@ -887,8 +892,9 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
           className={classnames(classes, !show && 'hidden')}
           style={{
             ...styles,
-            flex: `${width} 0 auto`,
+            flex: `1 1 ${_.asPx(width)}`,
             width: _.asPx(width),
+            minWidth: _.asPx(width),
             maxWidth: _.asPx(maxWidth),
           }}
           {...columnProps.rest}
