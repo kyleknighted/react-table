@@ -396,6 +396,7 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
           className={classnames('-header', theadProps.className)}
           style={{
             ...theadProps.style,
+            maxWidth: '100%',
           }}
           {...theadProps.rest}
         >
@@ -983,6 +984,7 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
               className={classnames(tBodyProps.className)}
               style={{
                 ...tBodyProps.style,
+                maxWidth: '100%',
               }}
               {...tBodyProps.rest}
             >
