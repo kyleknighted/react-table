@@ -249,7 +249,6 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
       const flexStyles = {
         flex: `1 1 ${_.asPx(flex)}`,
         width: _.asPx(width),
-        minWidth: _.asPx(width),
         maxWidth: _.asPx(maxWidth),
       }
 
@@ -283,7 +282,6 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
           className={classnames('-headerGroups', theadGroupProps.className)}
           style={{
             ...theadGroupProps.style,
-            minWidth: `${rowMinWidth}px`,
           }}
           {...theadGroupProps.rest}
         >
@@ -365,7 +363,6 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
             ...styles,
             flex: `1 1 ${_.asPx(width)}`,
             width: _.asPx(width),
-            minWidth: _.asPx(width),
             maxWidth: _.asPx(maxWidth),
           }}
           toggleSort={e => {
@@ -465,7 +462,6 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
             ...styles,
             flex: `1 1 ${_.asPx(width)}`,
             width: _.asPx(width),
-            minWidth: _.asPx(width),
             maxWidth: _.asPx(maxWidth),
           }}
           {...rest}
@@ -497,7 +493,6 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
           className={classnames('-filters', theadFilterProps.className)}
           style={{
             ...theadFilterProps.style,
-            minWidth: `${rowMinWidth}px`,
           }}
           {...theadFilterProps.rest}
         >
@@ -745,7 +740,6 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
                     ...styles,
                     flex: `1 1 ${_.asPx(width)}`,
                     width: _.asPx(width),
-                    minWidth: _.asPx(width),
                     maxWidth: _.asPx(maxWidth),
                   }}
                   {...tdProps.rest}
@@ -812,7 +806,6 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
             ...styles,
             flex: `1 1 ${_.asPx(flex)}`,
             width: _.asPx(width),
-            minWidth: _.asPx(width),
             maxWidth: _.asPx(maxWidth),
           }}
           {...tdProps.rest}
@@ -894,7 +887,6 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
             ...styles,
             flex: `1 1 ${_.asPx(width)}`,
             width: _.asPx(width),
-            minWidth: _.asPx(width),
             maxWidth: _.asPx(maxWidth),
           }}
           {...columnProps.rest}
@@ -919,7 +911,6 @@ export default class ReactTable extends Methods(Lifecycle(Component)) {
           className={tFootProps.className}
           style={{
             ...tFootProps.style,
-            minWidth: `${rowMinWidth}px`,
           }}
           {...tFootProps.rest}
         >
